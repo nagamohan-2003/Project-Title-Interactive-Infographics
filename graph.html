@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Renewable Energy Trends</title>
+    <link rel="stylesheet" href="graph.css">
+    <!-- Direct Chart.js CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Global Renewable Energy Trends</h1>
+            <p class="subtitle">Exploring the growth of sustainable energy sources from 2010 to 2023</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Energy Production by Source</h2>
+            <div class="controls">
+                <button class="control-btn active" data-year="2023">2023</button>
+                <button class="control-btn" data-year="2020">2020</button>
+                <button class="control-btn" data-year="2015">2015</button>
+                <button class="control-btn" data-year="2010">2010</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="energyChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Key Statistics</h2>
+            <div class="stat-grid">
+                <div class="stat-card" data-tooltip="Total renewable energy capacity worldwide">
+                    <h3>Total Capacity</h3>
+                    <div class="stat-value">3,372 GW</div>
+                    <p>Global Renewable Capacity</p>
+                </div>
+                <div class="stat-card" data-tooltip="Annual growth rate in renewable energy adoption">
+                    <h3>Growth Rate</h3>
+                    <div class="stat-value">9.6%</div>
+                    <p>Annual Growth</p>
+                </div>
+                <div class="stat-card" data-tooltip="Countries with renewable energy targets">
+                    <h3>Global Adoption</h3>
+                    <div class="stat-value">169</div>
+                    <p>Countries with Targets</p>
+                </div>
+                <div class="stat-card" data-tooltip="Reduction in carbon emissions due to renewable energy">
+                    <h3>Impact</h3>
+                    <div class="stat-value">2.8 Gt</div>
+                    <p>CO2 Reduction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+    <!-- Include the JavaScript file last -->
+    <script src="graph.js"></script>
+</body>
+</html>
